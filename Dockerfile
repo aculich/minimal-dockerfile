@@ -17,7 +17,8 @@ RUN apt-get update -qq --yes > /dev/null && \
     r-recommended \
     r-cran-littler \
     nodejs \
-    npm
+    npm \
+    curl
 
 # install the notebook package
 RUN pip install --no-cache --upgrade pip && \
