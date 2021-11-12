@@ -1,6 +1,6 @@
-# Minimal Dockerfiles for Binder
+# Minimal Dockerfiles for Binder customized to enable rJava
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/minimal-dockerfile/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/aculich/minimal-dockerfile/master)
 
 [Binder](https://mybinder.org) needs only one thing for images to work:
 
