@@ -3,6 +3,12 @@ FROM python:3.9-slim
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache notebook jupyterlab
 
+# Needed by rJava library
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    default-jdk > /dev/null && \
+    R CMD javareconf
+
 # create user with a home directory
 ARG NB_USER
 ARG NB_UID
