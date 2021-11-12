@@ -1,6 +1,6 @@
 # Minimal Dockerfiles for Binder customized to enable rJava
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/aculich/minimal-dockerfile/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/aculich/minimal-dockerfile-for-rjava/master)
 
 [Binder](https://mybinder.org) needs only one thing for images to work:
 
@@ -29,8 +29,6 @@ FROM python:3.9-slim
 RUN pip install --no-cache notebook jupyterlab
 ENV HOME=/tmp
 ```
-
-which you can try out: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/aculich/minimal-dockerfile/truly-minimal)
 
 However, it would be better to consume the NB_UID/NB_USER arguments and create a real user:
 
